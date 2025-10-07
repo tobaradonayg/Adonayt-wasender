@@ -231,14 +231,14 @@ window.setFormMode = (mode, contact = null) => {
     if (mode === 'edit' && contact) {
         title.textContent = `1. Editando Cliente: ${contact.firstName} ${contact.lastName}`;
         button.textContent = 'Guardar Cambios';
-        button.classList.remove('bg-wa-green');
-        button.classList.add('bg-blue-600');
+        button.classList.remove('bg-green-500');
+        button.classList.add('bg-blue-900');
         cancelButton.classList.remove('hidden');
     } else { 
         title.textContent = '1. Agregar Nuevo Cliente';
         button.textContent = 'Guardar Cliente';
-        button.classList.remove('bg-blue-600');
-        button.classList.add('bg-wa-green');
+        button.classList.remove('bg-blue-900');
+        button.classList.add('bg-green-500');
         cancelButton.classList.add('hidden');
         document.getElementById('inputFirstName').value = '';
         document.getElementById('inputLastName').value = '';
@@ -369,11 +369,11 @@ window.renderFilteredContacts = (filteredContacts) => {
             </div>
             <div class="flex space-x-2 flex-shrink-0">
                 <button onclick="sendSingleContactByPhone('${phoneForAction}')" 
-                        class="text-xs font-semibold px-2 py-1 rounded-lg bg-wa-green text-white hover:bg-wa-dark-green transition">
+                        class="text-xs font-semibold px-2 py-1 rounded-lg bg-green-500 text-white hover:bg-green-600 transition">
                     Enviar
                 </button>
                 <button onclick="startEditByPhone('${phoneForAction}')" 
-                        class="text-xs font-semibold px-2 py-1 rounded-lg bg-yellow-400 text-yellow-900 hover:bg-yellow-500 transition">
+                        class="edit-button text-xs font-semibold px-2 py-1 rounded-lg transition">
                     Editar
                 </button>
                 <button onclick="deleteContactByPhone('${phoneForAction}')" 
