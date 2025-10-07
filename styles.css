@@ -13,9 +13,11 @@ body {
     background-color: #f7f7f7;
 }
 
-/* Tailwind configuration as CSS custom properties (mimicking the original script-based config) */
-:root {
-    --wa-green: #25D366;
-    --wa-dark-green: #128C7E;
-    --galvanissa-blue: #1e3a8a;
+/* Estilo para el botón de edición en la lista de contactos */
+.edit-button {
+    background-color: #1e3a8a; /* Equivalente a galvanissa-blue */
+    color: white;
+}
+.edit-button:hover {
+    background-color: #1e40af; /* Un tono más oscuro para el hover */
 }
