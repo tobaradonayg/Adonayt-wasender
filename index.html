@@ -12,7 +12,7 @@
     <div class="max-w-xl w-full bg-white shadow-2xl border border-gray-100 rounded-2xl p-6 md:p-8 space-y-6 mt-4">
         <header class="text-center space-y-2 mb-6">
             <h1 class="text-3xl font-extrabold text-gray-800">
-                <span class="text-galvanissa-blue">WA</span> Sender (Almacenamiento Local)
+                <span class="text-blue-900">WA</span> Sender (Almacenamiento Local)
             </h1>
             <p class="text-sm text-gray-500">
                 Sistema para dos usuarios en la misma computadora.
@@ -24,11 +24,11 @@
         <div id="authScreen" class="space-y-4">
             <h2 class="text-xl font-bold text-gray-800 text-center" id="authTitle">Inicio de Sesión</h2>
             <input type="email" id="authEmail" placeholder="Correo (@galvanissa.com)"
-                   class="w-full p-3 border border-gray-300 rounded-lg focus:ring-galvanissa-blue focus:border-galvanissa-blue text-sm" />
+                   class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-900 focus:border-blue-900 text-sm" />
             <input type="password" id="authPassword" placeholder="Contraseña (mínimo 6 caracteres)"
-                   class="w-full p-3 border border-gray-300 rounded-lg focus:ring-galvanissa-blue focus:border-galvanissa-blue text-sm" />
+                   class="w-full p-3 border border-gray-300 rounded-lg focus:ring-blue-900 focus:border-blue-900 text-sm" />
             <button onclick="signIn()" 
-                    class="w-full p-3 rounded-lg bg-galvanissa-blue text-white font-semibold text-sm hover:bg-blue-900 transition duration-200">
+                    class="w-full p-3 rounded-lg bg-blue-900 text-white font-semibold text-sm hover:bg-blue-950 transition duration-200">
                 Iniciar Sesión
             </button>
             <button onclick="register()" 
@@ -51,11 +51,11 @@
                 </h2>
                 <div class="grid grid-cols-4 gap-2">
                     <input type="text" id="inputFirstName" placeholder="Nombre (ej: Juan)"
-                           class="col-span-1 p-2 border border-gray-300 rounded-lg focus:ring-wa-green focus:border-wa-green text-sm" />
+                           class="col-span-1 p-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 text-sm" />
                     <input type="text" id="inputLastName" placeholder="Apellido (ej: Pérez)"
-                           class="col-span-1 p-2 border border-gray-300 rounded-lg focus:ring-wa-green focus:border-wa-green text-sm" />
+                           class="col-span-1 p-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 text-sm" />
                     <select id="inputCategory" onchange="toggleProjectInfoInput()"
-                            class="col-span-2 p-2 border border-gray-300 rounded-lg focus:ring-wa-green focus:border-wa-green text-sm">
+                            class="col-span-2 p-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 text-sm">
                         <option value="cartera">Clientes de Cartera</option>
                         <option value="top">Clientes que Compran Más</option>
                         <option value="occasional">Clientes que Compran De Vez en Cuando</option>
@@ -64,12 +64,12 @@
                     </select>
                 </div>
                 <input type="text" id="inputPhone" placeholder="Teléfono (+Código, ej: +52...)"
-                       class="w-full p-2 border border-gray-300 rounded-lg focus:ring-wa-green focus:border-wa-green text-sm" />
+                       class="w-full p-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 text-sm" />
                 <textarea id="inputProjectInfo" placeholder="Información detallada del proyecto..." rows="2"
-                          class="w-full p-2 border border-gray-300 rounded-lg focus:ring-wa-green focus:border-wa-green text-sm hidden"></textarea>
+                          class="w-full p-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 text-sm hidden"></textarea>
                 <div class="flex space-x-2">
                     <button id="addEditButton" onclick="addOrUpdateContact()"
-                            class="w-full p-2 rounded-lg bg-wa-green text-white font-semibold text-sm hover:bg-wa-dark-green transition duration-200">
+                            class="w-full p-2 rounded-lg bg-green-500 text-white font-semibold text-sm hover:bg-green-600 transition duration-200">
                         Guardar Cliente
                     </button>
                     <button id="cancelEditButton" onclick="cancelEdit()"
@@ -128,7 +128,7 @@
                     </label>
                     <textarea id="messageTemplate" placeholder="Hola, te contacto por..." rows="4"
                               ondragover="allowDrop(event)" ondrop="drop(event)"
-                              class="w-full p-2 border border-gray-300 rounded-lg focus:ring-wa-green focus:border-wa-green transition duration-150"></textarea>
+                              class="w-full p-2 border border-gray-300 rounded-lg focus:ring-green-500 focus:border-green-500 transition duration-150"></textarea>
                 </div>
             </div>
 
