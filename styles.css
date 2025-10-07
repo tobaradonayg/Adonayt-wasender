@@ -1,0 +1,21 @@
+/* Configuración de fuente Inter (preferida) */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Estilos para asegurar que el log mantenga el formato del texto pre-wrap */
+#log {
+    white-space: pre-wrap; /* Mantiene saltos de línea y espacios en el log */
+}
+
+/* Estilo para un mejor contraste en la lista de contactos */
+.contact-item:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+/* Tailwind configuration as CSS custom properties (mimicking the original script-based config) */
+:root {
+    --wa-green: #25D366;
+    --wa-dark-green: #128C7E;
+    --galvanissa-blue: #1e3a8a;
+}
